@@ -4,22 +4,26 @@
         <Title>What I Missed</Title>
         <meta charset="UTF-8"/>
         <meta name="viewport"content="width=device-width"/>
-        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="./style.css">
     </head>
 
     <body>
 
         <header>
 
-            <h1>
+            <h1 id="header1" style="display:flex">
                 The Encounter
+            </h1>
+
+            <h1 id="header2" style="display:none">
+                The Request
             </h1>
 
         </header>
 
         <main>
-            <div>
-                <section>
+            <div id="first-scenario">
+                <section class="containers">
                     <p>
                         Commondore Krux's bottom half lays motionless infront of you. You look up at Xeleth as he argues with his sister.
                         You notice something strange about him...
@@ -27,25 +31,27 @@
 
                 </section>
 
-                <section>
-                    <p>
-                        Roll Arcana.
-                    </p>
-                    <p>
+                <section class="containers">
+                    <p >
+                        Roll Arcana
+                        <br/>
+                        <br/>
+                
                         (DM Note: If you have any abilities you can add to your roll you can add as normal)
                     </p>
                 </section>
-                <section>
-                    <button id="fail">1-10</button>
-                    <button id="moderate">11-15</button>
-                    <button id="pass">16-20+</button>
-                    <button id="crit">Nat 20</button>
+
+                <section class="containers" id="first-buttons" style="display:flex">
+                    <button id="failbtn">1-10</button>
+                    <button id="moderatebtn">11-15</button>
+                    <button id="passbtn">16-20+</button>
+                    <button id="critbtn">Nat 20</button>
                 </section>
 
             </div>
 
             <div>
-                <section>
+                <section class="containers" id="failans" style="display:none">
                     <p>
                         You feel something emanating from Xeleth. Its a feeling you have felt come from Wandell for the past few days. Wandell 
                         has seemed a little off. He had been doing things that he normally doesn't do. At the moment he is normal. But before
@@ -55,7 +61,7 @@
                     </p>
                 </section>
 
-                <section>
+                <section class="containers" id="moderateans" style="display:none">
 
                     <p>
                         You feel something emanating from Xeleth. Its a feeling you have felt aboard the Fred's Fish Fry. You're not completely
@@ -67,9 +73,41 @@
 
                 </section>
 
+                <section class="containers" id="passans" style="display:none">
+
+                    <p>
+                        You feel something emanating from Xeleth. Its a feeling you have felt aboard the Fred's Fish Fry. Now that you think of it,
+                        its a power you've felt emanating from Wandell. You no longer feel the power coming from him but it was definitely there for a 
+                        while. Then you notice Xeleth something even stranger about Xeleth. He is listening to his sister, but he keeps looking back.
+                         As if he is listening to someone else. But there doesn't seem to be any other sound coming from him. He is either going crazy
+                         or someone we can not see is talking to him. 
+                    </p>
+
+                </section>
+
+                <section class="containers" id="critans" style="display:none">
+
+                    <p>
+                        You feel something emanating from Xeleth. Its a feeling you have felt aboard the Fred's Fish Fry. Recently, you've felt it emanating 
+                        from Wandell. But you're definitely sure it comes from Barrabbas. This feeling isn't prominent. It's very subtle. Almost like it was being
+                        masked. Then you notice Xeleth something even stranger about Xeleth. He is listening to his sister, but he keeps looking back.
+                         As if he is listening to someone else. But there doesn't seem to be any other sound
+                        coming from him. He is either going crazy or someone we can not see is talking to him. 
+                    </p>
+
+                </section>
+
+                <section class="containers" id="next-question" style="display:none">
+                    <Button id="next">Next Scenario</Button>
+                </section>
+
+            </div>
+
+            <div>
+
 
             </div>
 
         </main>
-
+        <script src="./script.js"></script>
     </body>

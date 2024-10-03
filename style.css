@@ -1,0 +1,16 @@
+main {
+    display:flex;
+    justify-content: center;
+
+}
+
+button {
+    display:flex;
+    margin: 10px;
+   
+}
+
+.containers {
+    display:flex;
+    justify-content: center;
+}
