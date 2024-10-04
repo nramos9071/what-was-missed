@@ -38,10 +38,33 @@ document.querySelector('#critbtn').addEventListener('click', function() {
     document.querySelector('#next-question').setAttribute('style', 'display:flex');
 });
 
-// document.querySelector('#').addEventListener('click', function() {
-//     document.querySelector('#').setAttribute('style', 'display:none');
-//     document.querySelector('#').setAttribute('style', 'display:none');
-//     document.querySelector('#').setAttribute('style', 'display:none');
-//     document.querySelector('#').setAttribute('style', 'display:none');
-// });
+document.querySelector('#next').addEventListener('click', function () {
+    document.querySelector('#header1').setAttribute('style', 'display:none');
+    document.querySelector('#header2').setAttribute('style', 'display:flex');
+    document.querySelector('#first-scenario').setAttribute('style', 'display:none');
+    document.querySelector('#second-scenario').setAttribute('style', 'display:flex');
+    document.querySelector('#next').setAttribute('style', 'display:none');
+    document.querySelector('#ans').setAttribute('style', 'display:none');
+    // document.querySelector('#').setAttribute('style', 'display:none');
+    // document.querySelector('#').setAttribute('style', 'display:none');
+
+});
+
+
+
+
+document.querySelector('#yes').addEventListener('click', function() {
+    document.querySelector('#secondbtns').setAttribute('style', 'display:none');
+    document.querySelector('#ans2').setAttribute('style', 'display:flex');
+    document.querySelector('#yesans').setAttribute('style', 'display:flex');
+    document.querySelector('#noans').setAttribute('style', 'display:none');
+});
+
+
+document.querySelector('#no').addEventListener('click', function() {
+    document.querySelector('#secondbtns').setAttribute('style', 'display:none');
+    document.querySelector('#ans2').setAttribute('style', 'display:flex');
+    document.querySelector('#yesans').setAttribute('style', 'display:none');
+    document.querySelector('#noans').setAttribute('style', 'display:flex');
+});
 
