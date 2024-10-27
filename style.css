@@ -1,3 +1,9 @@
+body {
+    background-color: black;
+    color: white;
+
+}
+
 main {
     display:flex;
     justify-content: center;
@@ -19,5 +25,9 @@ button {
 
 #first-scenario {
     display: flex;
+    flex-direction: column;
+}
+
+#second-scenario {
     flex-direction: column;
 }
